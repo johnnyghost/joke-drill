@@ -175,5 +175,5 @@
         $('.loading').css('marginTop', -$window.height())
             .addClass('hidden');
         initialize();
-    }, 100)
+    }, 2000)
 }());
