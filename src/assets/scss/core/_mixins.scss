@@ -1,0 +1,46 @@
+$font-text-default: 24px !default;
+$font-text-color: white !default;
+$font-text-family: OfficinaSansStd;
+
+$font-title-default: 24px !default;
+$font-title-color: white !default;
+$font-title-family: UniversLTStd;
+
+@mixin font-text($font-family: $font-text-family, $color: $font-text-color, $font-size: $font-text-default) {
+	font: {
+		size: em-calc($font-size);
+		family: $font-family;
+	}
+    line-height: em-calc($font-size + 2);
+    color: $color;
+}
+
+@mixin font-title($font-family: $font-title-family, $color: $font-title-color, $font-size: $font-title-default) {
+	font: {
+		size: em-calc($font-size);
+		family: $font-family;
+	}
+    line-height: em-calc($font-size + 2);
+    color: $color;
+    text-transform: uppercase;
+}
+
+@mixin button ($main-color, $hover-color) {
+	font-family: $font-title-family;
+	border-color: $main-color;
+	color: $main-color;
+	background-color: transparent;
+    text-transform: uppercase;
+    padding:  em-calc(20) em-calc(70) em-calc(14);
+    &:hover {
+        background-color: $main-color;
+        color: $hover-color
+    }
+}
+
+@mixin absolute () {
+	position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}

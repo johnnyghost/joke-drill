@@ -1,0 +1,16 @@
+.highlight-bar {
+	font-family: $title-font-family;
+    background: $pink-color;
+    color: white;
+    text-transform: uppercase;
+    padding: em-calc(7) em-calc(5) 0 em-calc(5);
+    display: inline;
+    font-size: em-calc(24);
+}
+
+/* Small screens */
+@media only screen and (max-width: 767px) {
+    .highlight-bar {
+        font-size: rem-calc(24, 20);
+    }
+}

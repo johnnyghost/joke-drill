@@ -1,0 +1,13 @@
+@import "compass/css3/transition";
+
+// Base-level tags.
+body {
+    font-family: $text-font-family;
+    background: rgb(40, 10, 17);
+    font-size: 1em;
+    @include transition(margin-top, 0.4s ease-in);
+}
+
+ul {
+    list-style-type: none;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "rawnet",
+  "version": "0.0.0",
+  "authors": [
+    "kemarx@gmail.com"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "foundation": "zurb/bower-foundation#~5.5.1"
+  },
+  "dependencies": {
+    "jquery.easy-pie-chart": "~2.1.6",
+    "circliful": "~0.1.5",
+    "slick": "*"
+  }
+}

@@ -1,0 +1,89 @@
+@import "compass/css3/transform";
+@import "compass/css3/transition";
+@import "compass/css3/border-radius";
+
+.slick-slide img {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slick-prev,
+.slick-next {
+    position: absolute;
+}
+
+.slick-prev {
+    top: 50%;
+    left: 5%;
+    background: url('../images/icons/arrow.png')no-repeat;
+    width: 60px;
+    height: 60px;
+    @include transition-property(background);
+    &:hover {
+        @include transition-property(background);
+        background: url('../images/icons/arrow-hover-dark.png')no-repeat;
+    }
+    &:focus {
+        background: url('../images/icons/arrow.png')no-repeat;
+        background: url('../images/icons/arrow.png')no-repeat;
+    }
+}
+.slick-prev:before,
+.slick-next:before {
+    content: '';
+}
+
+.slick-next {
+    top: 50%;
+    right: 5%;
+    background: url('../images/icons/arrow.png')no-repeat;
+    width: 60px;
+    height: 60px;
+    @include rotate(180deg);
+    @include transition-property(background);
+
+    &:hover {
+        @include transition-property(background);
+        background: url('../images/icons/arrow-hover.png')no-repeat;
+    }
+    &:focus {
+        @include transition-property(background);
+        background: url('../images/icons/arrow.png')no-repeat;
+    }
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: white;
+    background: white;
+}
+
+.slick-dots li button:before {
+    font-size: em-calc(16);
+    border: 2px solid white;
+    content: '';
+    opacity: 1;
+    width: 15px;
+    height: 15px;
+    @include border-radius(50%);
+}
+.slick-dots li button {
+    font-size: inherit;
+    line-height: 2;
+}
+.slick-active {
+    margin-top: 500px;
+}
+
+@media only screen and (max-width: 767px) {
+    .slick-next,
+    .slick-prev {
+        opacity: 0;
+    }
+
+    .slick-dots {
+        bottom: -70px;
+    }
+}

@@ -1,0 +1,19 @@
+.container {
+    padding: em-calc(90) 0;
+}
+
+.title {
+    color: $pink-color;
+    font-size: em-calc(36);
+    line-height: em-calc(40);
+    text: {
+        transform: uppercase;
+    }
+}
+.description {
+    color: white;
+    font: {
+        family: $text-font-family;
+        size: em-calc(20);
+    }
+}

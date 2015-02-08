@@ -1,0 +1,48 @@
+@import "compass/css3/background-size";
+@import "compass/css3/images";
+@import "compass/css3/transition";
+
+.leaders {
+    background: url('../images/backgrounds/sky.jpg')no-repeat bottom center;
+    position: relative;
+    z-index: 2;
+
+    @include background-size(cover);
+    @include transition-property(background-position);
+
+    .info {
+        margin-top: 5%;
+        @include absolute();
+
+        .title {
+            @include font-title($title-font-family, $pink-color, 36);
+        }
+        .description p{
+            @include font-text($text-font-family, $white, 20);
+            line-height: em-calc(28);
+        }
+    }
+
+    .leaders-top-overlay {
+        @include absolute();
+        opacity: 1;
+    }
+
+    .warrior {
+        bottom: 0;
+        width: 40%;
+        padding: 10% 0 0 5%;
+        position:relative;
+        z-index: 3;
+    }
+     .leaders-bottom-overlay {
+        position:absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 1;
+        background-image: linear-gradient(180deg, transparent, #1b1b1b);
+        height: 18%;
+        z-index: 4;
+    }
+}

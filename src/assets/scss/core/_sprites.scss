@@ -1,0 +1,213 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$ipad-name: 'ipad';
+$ipad-x: 0px;
+$ipad-y: 0px;
+$ipad-offset-x: 0px;
+$ipad-offset-y: 0px;
+$ipad-width: 801px;
+$ipad-height: 1176px;
+$ipad-total-width: 1514px;
+$ipad-total-height: 1296px;
+$ipad-image: '../images/dist/spritesheet.png';
+$ipad: 0px 0px 0px 0px 801px 1176px 1514px 1296px '../images/dist/spritesheet.png' 'ipad';
+$arrow-hover-dark-name: 'arrow-hover-dark';
+$arrow-hover-dark-x: 142px;
+$arrow-hover-dark-y: 1176px;
+$arrow-hover-dark-offset-x: -142px;
+$arrow-hover-dark-offset-y: -1176px;
+$arrow-hover-dark-width: 60px;
+$arrow-hover-dark-height: 60px;
+$arrow-hover-dark-total-width: 1514px;
+$arrow-hover-dark-total-height: 1296px;
+$arrow-hover-dark-image: '../images/dist/spritesheet.png';
+$arrow-hover-dark: 142px 1176px -142px -1176px 60px 60px 1514px 1296px '../images/dist/spritesheet.png' 'arrow-hover-dark';
+$arrow-hover-name: 'arrow-hover';
+$arrow-hover-x: 382px;
+$arrow-hover-y: 1176px;
+$arrow-hover-offset-x: -382px;
+$arrow-hover-offset-y: -1176px;
+$arrow-hover-width: 60px;
+$arrow-hover-height: 60px;
+$arrow-hover-total-width: 1514px;
+$arrow-hover-total-height: 1296px;
+$arrow-hover-image: '../images/dist/spritesheet.png';
+$arrow-hover: 382px 1176px -382px -1176px 60px 60px 1514px 1296px '../images/dist/spritesheet.png' 'arrow-hover';
+$arrow-name: 'arrow';
+$arrow-x: 322px;
+$arrow-y: 1176px;
+$arrow-offset-x: -322px;
+$arrow-offset-y: -1176px;
+$arrow-width: 60px;
+$arrow-height: 60px;
+$arrow-total-width: 1514px;
+$arrow-total-height: 1296px;
+$arrow-image: '../images/dist/spritesheet.png';
+$arrow: 322px 1176px -322px -1176px 60px 60px 1514px 1296px '../images/dist/spritesheet.png' 'arrow';
+$facebook-name: 'facebook';
+$facebook-x: 801px;
+$facebook-y: 907px;
+$facebook-offset-x: -801px;
+$facebook-offset-y: -907px;
+$facebook-width: 60px;
+$facebook-height: 60px;
+$facebook-total-width: 1514px;
+$facebook-total-height: 1296px;
+$facebook-image: '../images/dist/spritesheet.png';
+$facebook: 801px 907px -801px -907px 60px 60px 1514px 1296px '../images/dist/spritesheet.png' 'facebook';
+$google-plus-name: 'google-plus';
+$google-plus-x: 82px;
+$google-plus-y: 1176px;
+$google-plus-offset-x: -82px;
+$google-plus-offset-y: -1176px;
+$google-plus-width: 60px;
+$google-plus-height: 60px;
+$google-plus-total-width: 1514px;
+$google-plus-total-height: 1296px;
+$google-plus-image: '../images/dist/spritesheet.png';
+$google-plus: 82px 1176px -82px -1176px 60px 60px 1514px 1296px '../images/dist/spritesheet.png' 'google-plus';
+$linkedin-name: 'linkedin';
+$linkedin-x: 82px;
+$linkedin-y: 1236px;
+$linkedin-offset-x: -82px;
+$linkedin-offset-y: -1236px;
+$linkedin-width: 60px;
+$linkedin-height: 60px;
+$linkedin-total-width: 1514px;
+$linkedin-total-height: 1296px;
+$linkedin-image: '../images/dist/spritesheet.png';
+$linkedin: 82px 1236px -82px -1236px 60px 60px 1514px 1296px '../images/dist/spritesheet.png' 'linkedin';
+$mail-name: 'mail';
+$mail-x: 202px;
+$mail-y: 1176px;
+$mail-offset-x: -202px;
+$mail-offset-y: -1176px;
+$mail-width: 60px;
+$mail-height: 60px;
+$mail-total-width: 1514px;
+$mail-total-height: 1296px;
+$mail-image: '../images/dist/spritesheet.png';
+$mail: 202px 1176px -202px -1176px 60px 60px 1514px 1296px '../images/dist/spritesheet.png' 'mail';
+$twitter-name: 'twitter';
+$twitter-x: 262px;
+$twitter-y: 1176px;
+$twitter-offset-x: -262px;
+$twitter-offset-y: -1176px;
+$twitter-width: 60px;
+$twitter-height: 60px;
+$twitter-total-width: 1514px;
+$twitter-total-height: 1296px;
+$twitter-image: '../images/dist/spritesheet.png';
+$twitter: 262px 1176px -262px -1176px 60px 60px 1514px 1296px '../images/dist/spritesheet.png' 'twitter';
+$warrior-name: 'warrior';
+$warrior-x: 801px;
+$warrior-y: 0px;
+$warrior-offset-x: -801px;
+$warrior-offset-y: 0px;
+$warrior-width: 713px;
+$warrior-height: 801px;
+$warrior-total-width: 1514px;
+$warrior-total-height: 1296px;
+$warrior-image: '../images/dist/spritesheet.png';
+$warrior: 801px 0px -801px 0px 713px 801px 1514px 1296px '../images/dist/spritesheet.png' 'warrior';
+$item-1-name: 'item-1';
+$item-1-x: 0px;
+$item-1-y: 1176px;
+$item-1-offset-x: 0px;
+$item-1-offset-y: -1176px;
+$item-1-width: 82px;
+$item-1-height: 101px;
+$item-1-total-width: 1514px;
+$item-1-total-height: 1296px;
+$item-1-image: '../images/dist/spritesheet.png';
+$item-1: 0px 1176px 0px -1176px 82px 101px 1514px 1296px '../images/dist/spritesheet.png' 'item-1';
+$item-2-name: 'item-2';
+$item-2-x: 801px;
+$item-2-y: 801px;
+$item-2-offset-x: -801px;
+$item-2-offset-y: -801px;
+$item-2-width: 61px;
+$item-2-height: 106px;
+$item-2-total-width: 1514px;
+$item-2-total-height: 1296px;
+$item-2-image: '../images/dist/spritesheet.png';
+$item-2: 801px 801px -801px -801px 61px 106px 1514px 1296px '../images/dist/spritesheet.png' 'item-2';
+$item-3-name: 'item-3';
+$item-3-x: 862px;
+$item-3-y: 801px;
+$item-3-offset-x: -862px;
+$item-3-offset-y: -801px;
+$item-3-width: 99px;
+$item-3-height: 100px;
+$item-3-total-width: 1514px;
+$item-3-total-height: 1296px;
+$item-3-image: '../images/dist/spritesheet.png';
+$item-3: 862px 801px -862px -801px 99px 100px 1514px 1296px '../images/dist/spritesheet.png' 'item-3';
+$spritesheet-width: 1514px;
+$spritesheet-height: 1296px;
+$spritesheet-image: '../images/dist/spritesheet.png';
+$spritesheet-sprites: $ipad $arrow-hover-dark $arrow-hover $arrow $facebook $google-plus $linkedin $mail $twitter $warrior $item-1 $item-2 $item-3;
+$spritesheet: 1514px 1296px '../images/dist/spritesheet.png' $spritesheet-sprites;
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

@@ -1,0 +1,16 @@
+// Base-level typography
+
+// UniversLTStd
+@font-face {
+    font-family: 'UniversLTStd';
+    src: url('../fonts/UniversLTStd-UltraCn.otf') format('opentype');
+}
+
+// UniversLTStd
+@font-face {
+    font-family: 'OfficinaSansStd';
+    src: url('../fonts/OfficinaSansStd-Book.otf') format('opentype');
+}
+
+$title-font-family: 'UniversLTStd', sans-serif;
+$text-font-family: 'OfficinaSansStd', sans-serif;;

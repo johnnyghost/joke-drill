@@ -1,0 +1,131 @@
+@import "compass/css3/background-size";
+@import "compass/css3/transition";
+
+.fancy {
+    background: url('../images/backgrounds/triangle-white.png')no-repeat top center;
+    position: relative;
+    z-index: 3;
+    @include background-size(cover);
+
+    .info {
+        margin-top: 15%;
+        opacity: 0;
+        @include absolute();
+
+        .title {
+            @include font-title($title-font-family,  $pink-color, 108);
+            margin: 0;
+            padding: em-calc(20px) 0 0;
+        }
+        .separator {
+            border: 1px solid $pink-color;
+            width: em-calc(95px);
+            display: inline-block;
+            margin-bottom: em-calc(60px);
+        }
+        .text {
+            @include font-text($title-font-family, $pink-color, 32);
+            text-transform: uppercase;
+        }
+        .launch {
+            @include button($pink-color, white);
+        }
+    }
+    &.visible {
+        .info {
+            opacity: 1;
+            @include transition(opacity, 2s ease-out);
+        }
+    }
+}
+
+
+/* Medium screens */
+@media only screen and (max-width: 1279px) and (min-width: 768px) {
+    .fancy .hidden {
+        display: none;
+    }
+    .fancy {
+        background: $pink-color;
+        padding-top: 7%;
+    }
+    .fancy .info {
+        margin: 0;
+        position: relative;
+    }
+    .fancy .info .title {
+        color: white;
+        font-size: rem-calc(70);
+        padding: 0 0 0;
+        margin: 0;
+        line-height: rem-calc(52);
+    }
+    .fancy .info .text {
+        color: black;
+        font-size: rem-calc(24);
+        line-height: rem-calc(26);
+    }
+    .fancy .info .launch {
+        background-color: transparent;
+        text-transform: uppercase;
+        padding:  em-calc(20) em-calc(70) em-calc(14);
+        border-color: white;
+        color: white;
+        &:hover {
+            background-color: white;
+            color: $pink-color;
+        }
+    }
+}
+@media only screen and (min-width: 1279px) and (max-width: 1442px){
+    .fancy .info .title {
+        font-size: rem-calc(50);
+        padding: 0 0 0;
+        margin: 0;
+        line-height: rem-calc(52);
+    }
+
+    .fancy .info .text {
+        font-size: rem-calc(20);
+        line-height: rem-calc(22)
+    }
+}
+/* Small screens */
+@media only screen and (max-width: 767px) {
+    .fancy .hidden {
+        display: none;
+    }
+    .fancy {
+        background: $pink-color;
+        padding-top: 7%;
+    }
+    .fancy .info {
+        padding-top: 6%;
+        margin: 0;
+        position: relative;
+    }
+    .fancy .info .title {
+        color: white;
+        font-size: rem-calc(70);
+        padding: 0 0 0;
+        margin: 0;
+        line-height: rem-calc(52);
+    }
+    .fancy .info .text {
+        color: black;
+        font-size: rem-calc(24);
+        line-height: rem-calc(26);
+    }
+
+    .fancy .info .launch {
+        background-color: transparent;
+        text-transform: uppercase;
+        padding:  em-calc(20) em-calc(70) em-calc(14);
+        border-color: white;
+        color: white;
+        &:hover {
+            background-color: white;
+            color: $pink-color;
+        }
+    }
+}

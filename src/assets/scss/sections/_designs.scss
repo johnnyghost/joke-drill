@@ -1,0 +1,99 @@
+@import "compass/css3/transition";
+$designs-background-color: #0a121d;
+
+.designs {
+    background: url('../images/backgrounds/red-triangle.png')no-repeat top center $designs-background-color;
+    background-color: $designs-background-color;
+    position: relative;
+    @include background-size(cover);
+
+    .container {
+        padding: em-calc(60) 0;
+
+        .info {
+            text-align: center;
+        }
+
+        .slides {
+            -webkit-padding-start: 0;
+        }
+
+        .launch,
+        .contact {
+            font-family: $title-font-family;
+            background-color: transparent;
+            color: white;
+            border-color: white;
+            text-transform: uppercase;
+            padding:  em-calc(20) em-calc(70) em-calc(14);
+            &:hover {
+                background-color: $designs-background-color;
+                border-color: $designs-background-color;
+                color: white;
+            }
+        }
+        .buttons {
+            padding-top: 5%;
+            text-align: center;
+        }
+        .launch {
+            margin-right: 1%;
+        }
+        .contact {
+            margin-left: 1%;
+        }
+        .text {
+            @include font-title($title-font-family, white, 24);
+            text-transform: uppercase;
+        }
+        .social-icons {
+            cursor: pointer;
+
+            .social-facebook {
+                @include sprite($facebook);
+                margin-left: 1%;
+                float: left;
+            }
+            .social-twitter {
+                @include sprite($twitter);
+                margin-left: 1%;
+                float: left;
+            }
+            .social-linkedin {
+                @include sprite($linkedin);
+                margin-left: 1%;
+                float: left;
+            }
+            .social-google-plus {
+                @include sprite($google-plus);
+                margin-left: 1%;
+                float: left;
+            }
+            .social-mail {
+                @include sprite($mail);
+                margin-left: 1%;
+                float: left;
+            }
+        }
+        .title {
+            @include font-title($title-font-family, $pink-color, 40);
+        }
+    }
+
+    .designs-bottom-overlay {
+
+        position:absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 1;
+    }
+
+    &.visible {
+        .slick-active {
+            margin-top: 0;
+            @include transition(margin-top, 1s ease-in);
+        }
+    }
+
+}

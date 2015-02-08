@@ -1,0 +1,79 @@
+@import "compass/css3/transition";
+@import "compass/css3/background-size";
+
+.joke {
+    background: url(../images/backgrounds/joke.jpg)no-repeat top center fixed;
+    @include background-size(cover);
+
+    .overlay {
+        content: '';
+        background: black;
+        opacity: 0;
+        @include absolute();
+    }
+
+    .info {
+        margin-top: 15%;
+        @include absolute();
+
+        .title {
+            @include font-title($title-font-family, white, 100);
+            text-transform: uppercase;
+            color: white;
+            margin: 15px 0;
+            padding: em-calc(20) 0 0;
+        }
+        .separator {
+            border: 1px solid $pink-color;
+            width: em-calc(95);
+            display: inline-block;
+        }
+        .text {
+            @include font-text($title-font-family);
+            text-transform: uppercase;
+            padding: em-calc(20px) 0;
+            margin: 0;
+        }
+    }
+
+    &.visible {
+        .info {
+            opacity: 1;
+            @include transition(opacity, 2s ease-out);
+            @include transition-delay(0.5s);
+        }
+    }
+}
+
+/* Medium screens */
+@media only screen and (max-width: 1279px) and (min-width: 768px) {
+    .joke .info {
+        margin-top: 6%;
+    }
+    .joke .info .title {
+        font-size: rem-calc(70);
+        padding: 0 0 0;
+        margin: 20px 0;
+    }
+    .joke .info .text {
+        font-size: rem-calc(26);
+        padding: em-calc(8) em-calc(8);
+    }
+}
+
+/* Small screens */
+@media only screen and (max-width: 767px) {
+    .joke .info {
+        margin-top: 6%;
+    }
+    .joke .info .title {
+        font-size: rem-calc(70);
+        padding: 0 0 0;
+        margin: 20px 0;
+    }
+    .joke .info .text {
+        font-size: rem-calc(26);
+        padding: em-calc(8) em-calc(8);
+        background: rgba(0,0,0,0.5);
+    }
+}

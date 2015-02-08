@@ -1,0 +1,97 @@
+@import "compass/css3/background-size";
+@import "compass/css3/transition";
+
+.projects {
+    background: url('../images/backgrounds/projects.jpg')no-repeat top center;
+    position: relative;
+    z-index: 2;
+    @include background-size(cover);
+
+    .title {
+        @include font-title($title-font-family, $pink-color, 36);
+        text-align: center
+    }
+
+    .description {
+        @include font-text($text-font-family, $white, 20);
+    }
+
+    .item-1,
+    .item-2,
+    .item-3 {
+        text-align: center;
+        opacity: 0;
+
+        .item-title {
+            @include font-title($title-font-family, $pink-color, 24);
+        }
+        .item-description {
+            @include font-text($text-font-family, $white, 16);
+        }
+    }
+
+    .item-1 .icon {
+        @include sprite($item-1);
+        margin: auto;
+    }
+    .item-2 .icon {
+        @include sprite($item-2);
+        margin: auto;
+    }
+    .item-3 .icon {
+        @include sprite($item-3);
+        margin: auto;
+    }
+    .projects-bottom-overlay {
+        position:absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 1;
+        background-image: linear-gradient(180deg,transparent, #100F0D);
+        height: 18%;
+    }
+    .projects-top-overlay {
+        @include absolute();
+        opacity: 1;
+        background-image: linear-gradient(0, transparent, #1b1b1b);
+        height: 18%;
+    }
+    &.visible {
+        .item-1 {
+            opacity: 1;
+            @include transition(opacity, 0.2s ease-out);
+            @include transition-delay(0.5s);
+        }
+        .item-2 {
+            opacity: 1;
+            @include transition(opacity, 0.2s ease-out);
+            @include transition-delay(0.8s);
+        }
+        .item-3 {
+            opacity: 1;
+            @include transition(opacity, 0.2s ease-out);
+            @include transition-delay(1.1s);
+        }
+    }
+}
+
+/* Small screens */
+@media only screen and (max-width: 767px) {
+    .projects {
+        background: #1e1e1e;
+    }
+    .container {
+        padding: 6% 0 0 0;
+    }
+
+}
+/* Medium screens */
+@media only screen and (max-width: 1279px) and (min-width: 768px) {
+    .projects {
+        background: #1e1e1e;
+    }
+    .container {
+        padding: 6% 0 0;
+    }
+}
