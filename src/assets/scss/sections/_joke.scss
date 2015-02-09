@@ -3,6 +3,7 @@
 
 .joke {
     background: url(../images/backgrounds/joke.jpg)no-repeat top center fixed;
+    background-position-x: 100%;
     @include background-size(cover);
 
     .overlay {

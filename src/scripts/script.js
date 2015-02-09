@@ -100,7 +100,7 @@
                 $overlay.css({opacity: ($window.scrollTop() / $joke.height())})
 
                 // Put together our final background position
-                var coords = '80% '+ yPos + 'px';
+                var coords = '100% '+ yPos + 'px';
                 // Move the background
                 $bgobj.css({ backgroundPosition: coords });
             });
