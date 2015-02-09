@@ -13,6 +13,7 @@
     }
 
     .info {
+        opacity: 0;
         margin-top: 15%;
         @include absolute();
 
@@ -39,8 +40,8 @@
     &.visible {
         .info {
             opacity: 1;
-            @include transition(opacity, 2s ease-out);
-            @include transition-delay(0.5s);
+            @include transition(opacity 0.8s ease-out);
+            @include transition-delay(0.9s);
         }
     }
 }

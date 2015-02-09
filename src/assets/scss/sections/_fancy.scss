@@ -34,11 +34,11 @@
     &.visible {
         .info {
             opacity: 1;
-            @include transition(opacity, 2s ease-out);
+            @include transition(opacity 0.8s ease-out);
+            @include transition-delay(0.3s);
         }
     }
 }
-
 
 /* Medium screens */
 @media only screen and (max-width: 1279px) and (min-width: 768px) {
