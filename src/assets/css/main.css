@@ -641,12 +641,12 @@ The `sprites` mixin generates identical output to the CSS template
 
   .joke .info .title {
     font-size: 4.375rem;
-    padding: 0 0 0;
-    margin: 20px 0; }
+    padding: 0.625rem 0 0;
+    line-height: 4.5rem; }
 
   .joke .info .text {
     font-size: 1.625rem;
-    padding: 0.5rem 0.5rem; } }
+    padding: 0.9375rem 0; } }
 /* Small screens */
 @media only screen and (max-width: 767px) {
   .joke .info {
@@ -655,10 +655,11 @@ The `sprites` mixin generates identical output to the CSS template
   .joke .info .title {
     font-size: 4.375rem;
     padding: 0 0 0;
-    margin: 20px 0; }
+    margin: 0; }
 
   .joke .info .text {
     font-size: 1.625rem;
+    line-height: 1.75rem;
     padding: 0.5rem 0.5rem;
     background: rgba(0, 0, 0, 0.5); } }
 .fancy {

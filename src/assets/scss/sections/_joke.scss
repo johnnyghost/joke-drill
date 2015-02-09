@@ -52,12 +52,12 @@
     }
     .joke .info .title {
         font-size: rem-calc(70);
-        padding: 0 0 0;
-        margin: 20px 0;
+        padding: rem-calc(10) 0 0;
+        line-height: rem-calc(72);
     }
     .joke .info .text {
         font-size: rem-calc(26);
-        padding: em-calc(8) em-calc(8);
+        padding: em-calc(15) 0;
     }
 }
 
@@ -69,10 +69,11 @@
     .joke .info .title {
         font-size: rem-calc(70);
         padding: 0 0 0;
-        margin: 20px 0;
+        margin: 0;
     }
     .joke .info .text {
         font-size: rem-calc(26);
+        line-height: rem-calc(28);
         padding: em-calc(8) em-calc(8);
         background: rgba(0,0,0,0.5);
     }
