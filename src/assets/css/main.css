@@ -494,13 +494,6 @@ body {
 ul {
   list-style-type: none; }
 
-section, h1, li, img {
-  -moz-transition: width 0.2 ease-in-out, left 1.5s ease-in-out;
-  -webkit-transition: width 0.2 ease-in-out, left 1.5s ease-in-out;
-  -moz-transition: width 0.2 ease-in-out, left 1.5s ease-in-out;
-  -o-transition: width 0.2 ease-in-out, left 1.5s ease-in-out;
-  transition: width 0.2 ease-in-out, left 1.5s ease-in-out; }
-
 .hidden {
   visibility: hidden; }
 
@@ -571,7 +564,12 @@ The `sprites` mixin generates identical output to the CSS template
     position: absolute;
     opacity: 1;
     width: 70px;
-    height: 70px; }
+    height: 70px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; }
   .loading.hidden .icon {
     opacity: 0;
     -webkit-transition: opacity, 0.4s ease-in;
