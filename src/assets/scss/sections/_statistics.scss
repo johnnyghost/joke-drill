@@ -1,3 +1,5 @@
+@import "compass/css3/filter";
+
 .statistics {
     background: url('../images/backgrounds/which.jpg')no-repeat top center;
     @include background-size(cover);
@@ -49,11 +51,18 @@
             }
 
             .percent {
-                @include font-title($title-font-family, white, 77);
                 display: inline-block;
                 line-height: 110px;
                 z-index: 2;
                 padding: 30% 30%;
+
+                @include font-title($title-font-family, white, 77);
+                @include transition(all 0.4s ease-in-out);
+
+                &.blur {
+                    @include filter(blur(2px));
+                    @include transition(all 0.8s ease-in-out);
+                }
             }
             .percent:after {
                 content: '%';

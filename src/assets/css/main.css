@@ -1045,6 +1045,10 @@ The `sprites` mixin generates identical output to the CSS template
         top: 0;
         left: 0; }
       .statistics .charts .chart .percent {
+        display: inline-block;
+        line-height: 110px;
+        z-index: 2;
+        padding: 30% 30%;
         font-size: 4.8125rem;
         font-family: "UniversLTStd", sans-serif;
         line-height: 4.9375rem;
@@ -1052,10 +1056,18 @@ The `sprites` mixin generates identical output to the CSS template
         text-transform: uppercase;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        display: inline-block;
-        line-height: 110px;
-        z-index: 2;
-        padding: 30% 30%; }
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out; }
+        .statistics .charts .chart .percent.blur {
+          -webkit-filter: blur(2px);
+          -moz-filter: blur(2px);
+          filter: blur(2px);
+          -webkit-transition: all 0.8s ease-in-out;
+          -moz-transition: all 0.8s ease-in-out;
+          -o-transition: all 0.8s ease-in-out;
+          transition: all 0.8s ease-in-out; }
       .statistics .charts .chart .percent:after {
         content: '%';
         margin-left: 0.00625rem;

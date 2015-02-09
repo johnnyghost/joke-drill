@@ -152,7 +152,10 @@
             lineCap:'circle',
             size: 200,
             onStep: function(from, to, percent) {
-                $(this.el).find('.percent').text(Math.round(percent));
+                $(this.el).find('.percent').text(Math.round(percent)).addClass('blur');
+            },
+            onStop: function () {
+                $(this.el).find('.percent').removeClass('blur');
             }
         });
     }
