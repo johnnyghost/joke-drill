@@ -13,6 +13,7 @@ $font-title-family: UniversLTStd;
 	}
     line-height: em-calc($font-size + 2);
     color: $color;
+    @include font-smoothing();
 }
 
 @mixin font-title($font-family: $font-title-family, $color: $font-title-color, $font-size: $font-title-default) {
@@ -23,6 +24,7 @@ $font-title-family: UniversLTStd;
     line-height: em-calc($font-size + 2);
     color: $color;
     text-transform: uppercase;
+    @include font-smoothing();
 }
 
 @mixin button ($main-color, $hover-color) {
@@ -36,6 +38,17 @@ $font-title-family: UniversLTStd;
         background-color: $main-color;
         color: $hover-color
     }
+}
+
+@mixin font-smoothing($value: antialiased) {
+  @if $value == antialiased {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  @else {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
 }
 
 @mixin absolute () {

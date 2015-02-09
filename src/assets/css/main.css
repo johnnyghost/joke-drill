@@ -603,6 +603,8 @@ The `sprites` mixin generates identical output to the CSS template
       line-height: 6.375rem;
       color: white;
       text-transform: uppercase;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
       text-transform: uppercase;
       color: white;
       margin: 15px 0;
@@ -616,6 +618,8 @@ The `sprites` mixin generates identical output to the CSS template
       font-family: "UniversLTStd", sans-serif;
       line-height: 1.625rem;
       color: white;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
       text-transform: uppercase;
       padding: 1.25rem 0;
       margin: 0; }
@@ -678,6 +682,8 @@ The `sprites` mixin generates identical output to the CSS template
       line-height: 6.875rem;
       color: #f5384c;
       text-transform: uppercase;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
       margin: 0;
       padding: 1.25rem 0 0; }
     .fancy .info .separator {
@@ -690,6 +696,8 @@ The `sprites` mixin generates identical output to the CSS template
       font-family: "UniversLTStd", sans-serif;
       line-height: 2.125rem;
       color: #f5384c;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
       text-transform: uppercase; }
     .fancy .info .launch {
       font-family: UniversLTStd;
@@ -812,12 +820,16 @@ The `sprites` mixin generates identical output to the CSS template
       font-family: "UniversLTStd", sans-serif;
       line-height: 2.375rem;
       color: #f5384c;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale; }
     .leaders .info .description p {
       font-size: 1.25rem;
       font-family: "OfficinaSansStd", sans-serif;
       line-height: 1.375rem;
       color: white;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
       line-height: 1.75rem; }
   .leaders .leaders-top-overlay {
     position: absolute;
@@ -855,12 +867,16 @@ The `sprites` mixin generates identical output to the CSS template
     line-height: 2.375rem;
     color: #f5384c;
     text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     text-align: center; }
   .projects .description {
     font-size: 1.25rem;
     font-family: "OfficinaSansStd", sans-serif;
     line-height: 1.375rem;
-    color: white; }
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
   .projects .item-1,
   .projects .item-2,
   .projects .item-3 {
@@ -873,14 +889,18 @@ The `sprites` mixin generates identical output to the CSS template
       font-family: "UniversLTStd", sans-serif;
       line-height: 1.625rem;
       color: #f5384c;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale; }
     .projects .item-1 .item-description,
     .projects .item-2 .item-description,
     .projects .item-3 .item-description {
       font-size: 1rem;
       font-family: "OfficinaSansStd", sans-serif;
       line-height: 1.125rem;
-      color: white; }
+      color: white;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale; }
   .projects .item-1 .icon {
     background-image: url(../images/dist/spritesheet.png);
     background-position: 0px -1176px;
@@ -976,12 +996,16 @@ The `sprites` mixin generates identical output to the CSS template
     font-family: "UniversLTStd", sans-serif;
     line-height: 2.375rem;
     color: #f5384c;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
   .statistics .description {
     font-size: 1.25rem;
     font-family: "OfficinaSansStd", sans-serif;
     line-height: 1.375rem;
     color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     padding-bottom: 3.75rem; }
   .statistics .dark-sea {
     background: url("../images/statistics/dark-sea.jpg") no-repeat top center;
@@ -1000,12 +1024,16 @@ The `sprites` mixin generates identical output to the CSS template
       font-family: "UniversLTStd", sans-serif;
       line-height: 1.625rem;
       color: #f5384c;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale; }
     .statistics .charts .chart-description {
       font-size: 1rem;
       font-family: "OfficinaSansStd", sans-serif;
       line-height: 1.125rem;
-      color: white; }
+      color: white;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale; }
     .statistics .charts .chart {
       position: relative;
       display: inline-block;
@@ -1022,6 +1050,8 @@ The `sprites` mixin generates identical output to the CSS template
         line-height: 4.9375rem;
         color: white;
         text-transform: uppercase;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
         display: inline-block;
         line-height: 110px;
         z-index: 2;
@@ -1117,6 +1147,8 @@ The `sprites` mixin generates identical output to the CSS template
       line-height: 1.625rem;
       color: white;
       text-transform: uppercase;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
       text-transform: uppercase; }
     .designs .container .social-icons {
       cursor: pointer; }
@@ -1160,7 +1192,9 @@ The `sprites` mixin generates identical output to the CSS template
       font-family: "UniversLTStd", sans-serif;
       line-height: 2.625rem;
       color: #f5384c;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale; }
   .designs .designs-bottom-overlay {
     position: absolute;
     right: 0;
