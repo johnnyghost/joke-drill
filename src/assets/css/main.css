@@ -486,10 +486,10 @@ body {
   font-family: "OfficinaSansStd", sans-serif;
   background: #280a11;
   font-size: 1em;
-  -webkit-transition: margin-top, 0.4s ease-in;
-  -moz-transition: margin-top, 0.4s ease-in;
-  -o-transition: margin-top, 0.4s ease-in;
-  transition: margin-top, 0.4s ease-in; }
+  -webkit-transition: all, 0.2s ease-in;
+  -moz-transition: all, 0.2s ease-in;
+  -o-transition: all, 0.2s ease-in;
+  transition: all, 0.2s ease-in; }
 
 ul {
   list-style-type: none; }
@@ -1048,7 +1048,7 @@ The `sprites` mixin generates identical output to the CSS template
         display: inline-block;
         line-height: 110px;
         z-index: 2;
-        padding: 30% 30%;
+        padding: 35% 30%;
         font-size: 4.8125rem;
         font-family: "UniversLTStd", sans-serif;
         line-height: 4.9375rem;

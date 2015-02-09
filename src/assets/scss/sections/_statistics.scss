@@ -54,7 +54,7 @@
                 display: inline-block;
                 line-height: 110px;
                 z-index: 2;
-                padding: 30% 30%;
+                padding: 35% 30%;
 
                 @include font-title($title-font-family, white, 77);
                 @include transition(all 0.4s ease-in-out);
