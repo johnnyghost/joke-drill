@@ -813,7 +813,7 @@ The `sprites` mixin generates identical output to the CSS template
     right: 0;
     left: 0; }
     .leaders .info .text-block {
-      padding-top: 5%; }
+      padding-top: 2%; }
     .leaders .info .title {
       font-size: 2.25rem;
       font-family: "UniversLTStd", sans-serif;
