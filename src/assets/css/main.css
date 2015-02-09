@@ -607,7 +607,7 @@ The `sprites` mixin generates identical output to the CSS template
       -moz-osx-font-smoothing: grayscale;
       text-transform: uppercase;
       color: white;
-      margin: 15px 0;
+      margin: 0;
       padding: 1.25rem 0 0; }
     .joke .info .separator {
       border: 1px solid #f5384c;
@@ -690,7 +690,7 @@ The `sprites` mixin generates identical output to the CSS template
       border: 1px solid #f5384c;
       width: 5.9375rem;
       display: inline-block;
-      margin-bottom: 3.75rem; }
+      margin-bottom: 4.375rem; }
     .fancy .info .text {
       font-size: 2rem;
       font-family: "UniversLTStd", sans-serif;
@@ -752,7 +752,6 @@ The `sprites` mixin generates identical output to the CSS template
       color: #f5384c; } }
 @media only screen and (min-width: 1279px) and (max-width: 1442px) {
   .fancy .info .title {
-    font-size: 3.125rem;
     padding: 0 0 0;
     margin: 0;
     line-height: 3.25rem; }

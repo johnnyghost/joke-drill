@@ -21,7 +21,7 @@
             border: 1px solid $pink-color;
             width: em-calc(95px);
             display: inline-block;
-            margin-bottom: em-calc(60px);
+            margin-bottom: em-calc(70px);
         }
         .text {
             @include font-text($title-font-family, $pink-color, 32);
@@ -79,7 +79,6 @@
 }
 @media only screen and (min-width: 1279px) and (max-width: 1442px){
     .fancy .info .title {
-        font-size: rem-calc(50);
         padding: 0 0 0;
         margin: 0;
         line-height: rem-calc(52);
