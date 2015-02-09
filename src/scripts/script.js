@@ -150,7 +150,10 @@
             scaleColor:false,
             lineWidth: 10,
             lineCap:'circle',
-            size: 200
+            size: 200,
+            onStep: function(from, to, percent) {
+                $(this.el).find('.percent').text(Math.round(percent));
+            }
         });
     }
 
