@@ -134,7 +134,7 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-                    'dist/<%= pkg.name %>.min.js': ['src/scripts/script.js']
+                    'dist/assets/javascripts/<%= pkg.name %>.min.js': ['src/scripts/script.js']
                 }
             }
         }

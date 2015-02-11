@@ -77,14 +77,15 @@
     margin-top: 500px;
 }
 
+.slick-dots {
+    position: relative;
+    margin-top: 3%;
+    bottom: 0;
+}
 
 @media only screen and (max-width: 767px) {
     .slick-next,
     .slick-prev {
         opacity: 0;
-    }
-
-    .slick-dots {
-        bottom: -50px;
     }
 }

@@ -10,6 +10,5 @@
   },
   "_source": "git://github.com/shashankmehta/slick.js.git",
   "_target": "*",
-  "_originalSource": "slick",
-  "_direct": true
+  "_originalSource": "slick"
 }
