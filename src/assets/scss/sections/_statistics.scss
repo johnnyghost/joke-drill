@@ -84,7 +84,7 @@
     .statistics-top-overlay {
         @include absolute();
         opacity: 1;
-        background-image: linear-gradient(0, transparent, #100f0d 90%, #100f0d 10% , #100f0d );
+        background-image: linear-gradient(0deg, transparent, #100f0d 90%, #100f0d 10% , #100f0d );
         height: 32%;
     }
 }

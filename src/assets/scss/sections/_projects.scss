@@ -54,7 +54,7 @@
     .projects-top-overlay {
         @include absolute();
         opacity: 1;
-        background-image: linear-gradient(0, transparent, #1b1b1b);
+        background-image: linear-gradient(0deg, transparent, #1b1b1b);
         height: 18%;
     }
     &.visible {
